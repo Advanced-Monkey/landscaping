@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Garden & Landscape Masterplan</title>
+  <style>
+    :root {
+      --bg: #f6f5f0;
+      --card: #ffffff;
+      --ink: #1e241e;
+      --muted: #5a6558;
+      --accent: #2e5a36;
+      --accent-soft: #e3ede4;
+      --earth: #8c583a;
+      --border: #dce0d9;
+      --shadow: 0 10px 30px rgba(24, 34, 24, 0.08);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header.hero {
+      background: linear-gradient(135deg, #1b3120 0%, #2c4c34 60%, #3d5a3b 100%);
+      color: #fff;
+      padding: 3.5rem 1.5rem 2.75rem;
+      text-align: center;
+    }
+    header.hero .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    header.hero h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.85rem, 4vw, 2.85rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    header.hero p {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      color: rgba(255,255,255,0.86);
+      font-size: 1.05rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      padding: 0.6rem 1.15rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      text-decoration: none;
+    }
+    .btn:hover { background: rgba(255,255,255,0.24); }
+    .btn.primary { background: #fff; color: #1b3120; border-color: #fff; }
+    .btn.primary:hover { background: #ebf2ec; }
+
+    nav.quick-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 1rem;
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      justify-content: center;
+    }
+    nav.quick-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    nav.quick-nav a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(1.25rem, 3vw, 2.25rem);
+      margin-bottom: 2.25rem;
+    }
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-header .step-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+    }
+    .section-header h2 {
+      margin: 0.25rem 0 0;
+      font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    }
+
+    /* Interactive Before/After Comparison Slider */
+    .ba-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      user-select: none;
+      background: #111;
+      border: 1px solid var(--border);
+    }
+    .ba-wrapper img {
+      display: block;
+      width: 100%;
+      height: auto;
+      pointer-events: none;
+    }
+    .ba-before-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      clip-path: inset(0 75% 0 0);
+    }
+    .ba-label {
+      position: absolute;
+      top: 14px;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: rgba(15, 23, 15, 0.75);
+      color: #fff;
+      backdrop-filter: blur(4px);
+      z-index: 4;
+    }
+    .ba-label.before { left: 14px; }
+    .ba-label.after { right: 14px; background: rgba(46, 90, 54, 0.88); }
+    .ba-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 25%;
+      width: 3px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      z-index: 5;
+      pointer-events: none;
+    }
+    .ba-knob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    }
+    .ba-range {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      cursor: ew-resize;
+      z-index: 6;
+    }
+
+    /* Side-by-side mode toggle */
+    .side-by-side-grid {
+      display: none;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    body.show-side-by-side .side-by-side-grid {
+      display: grid;
+    }
+    body.show-side-by-side .ba-wrapper {
+      display: none;
+    }
+    .side-by-side-grid figure {
+      margin: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #fafafa;
+    }
+    .side-by-side-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .side-by-side-grid figcaption {
+      padding: 0.55rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.35rem;
+    }
+    .highlight-box {
+      background: #f9faf8;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 0.95rem 1.1rem;
+    }
+    .highlight-box h4 {
+      margin: 0 0 0.35rem;
+      font-size: 0.98rem;
+      color: var(--ink);
+    }
+    .highlight-box p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .callout-warn {
+      background: #fff8f1;
+      border: 1px solid #f0d2b6;
+      border-left: 5px solid var(--earth);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-top: 1.25rem;
+      font-size: 0.92rem;
+    }
+
+    table.schedule {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin-top: 0.75rem;
+    }
+    table.schedule th, table.schedule td {
+      text-align: left;
+      padding: 0.75rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    table.schedule th {
+      background: #f3f6f2;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .stage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.25rem;
+    }
+    .stage-box {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      background: #fafbf9;
+    }
+    .stage-box h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      padding: 0.45rem 0;
+      font-size: 0.92rem;
+    }
+    .checklist input[type="checkbox"] {
+      margin-top: 0.25rem;
+      accent-color: var(--accent);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    @media print {
+      nav.quick-nav, .toolbar { display: none !important; }
+      body { background: #fff; }
+      .section-card { box-shadow: none; break-inside: avoid; }
+      .side-by-side-grid { display: grid !important; }
+      .ba-wrapper { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="badge">Interactive Property Masterplan</div>
+    <h1>Garden &amp; Landscape Masterplan</h1>
+    <p>Complete zone-by-zone architectural &amp; planting design with interactive Before/After sliders, 80cm raised deck + ground-level plunge pool integration, undercover sauna enclosure, and staged build schedule.</p>
+    <div class="toolbar">
+      <button class="btn primary" onclick="toggleViewMode()" id="viewModeBtn">Switch to Side-by-Side View</button>
+      <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </header>
+
+  <nav class="quick-nav">
+    <a href="#aerial">1. Aerial Masterplan</a>
+    <a href="#office">2. Container Office &amp; Veranda</a>
+    <a href="#sauna">3. Undercover Sauna &amp; Slat Screen</a>
+    <a href="#deck">4. 80cm Deck &amp; Plunge Pool</a>
+    <a href="#entrance">5. Main Entrance Double Doors</a>
+    <a href="#firepit">6. Sunken Firepit</a>
+    <a href="#schedule">7. Plants &amp; Materials</a>
+    <a href="#stages">8. Staged Roadmap</a>
+  </nav>
+
+  <main>
+
+    <!-- SECTION 1: AERIAL -->
+    <section class="section-card" id="aerial">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">Zone Overview</span>
+          <h2>1. Top-Down Aerial Masterplan</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Drag slider left/right to compare Before &amp; After</span>
+      </div>
+
+      <div class="ba-wrapper">
+        <img src="images/aerial_after.jpg" alt="Proposed Aerial Landscape Masterplan" />
+        <div class="ba-before-layer">
+          <img src="images/aerial_before.jpg" alt="Existing Satellite View" />
+        </div>
+        <span class="ba-label before">Existing Satellite</span>
+        <span class="ba-label after">Proposed Masterplan</span>
+        <div class="ba-handle"><div class="ba-knob">&#8596;</div></div>
+        <input type="range" min="0" max="100" value="25" class="ba-range" aria-label="Before and after comparison slider" />
+      </div>
+
+      <div class="side-by-side-grid">
+        <figure>
+          <img src="images/aerial_after.jpg" alt="Proposed Aerial Landscape Masterplan" />
+          <figcaption>Proposed Masterplan</figcaption>
+        </figure>
+        <figure>
+          <img src="images/aerial_before.jpg" alt="Existing Satellite View" />
+          <figcaption>Existing Satellite Baseline</figcaption>
+        </figure>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <h4>1. Original 80cm Square Deck + Left Plunge Pool</h4>
+          <p>Keeps the existing square hardwood deck footprint intact under a vine pergola. The plunge pool sits on a ground-level slab immediately to the left (West) of the 80cm-high deck so its rim aligns with the deck floor.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>2. Sauna Inside Slat Enclosure (South of House)</h4>
+          <p>A dark skillion roof spans over the sleeper-edged pad south of the house, housing the Sauna inside the vertical timber slat screen with a clear bluestone-paved outer walkway.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>3. Human-Only North Gate &amp; Orchard Walk</h4>
+          <p>Pedestrian gate in the North road fence with a stone-and-gravel path winding through the Fruit Tree Orchard straight around to the East-facing Main Entrance Double Doors.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>4. Fully Roofed Container Office &amp; 3m Veranda</h4>
+          <p>Continuous Colorbond roof spanning the shipping container office, its 3m western timber deck, and covered access to the white shower/toilet pod.</p>
+        </div>
+      </div>
+
+      <div class="callout-warn">
+        <strong>Septic &amp; Absorption Trench Protection Zone (South-West):</strong> The zone between the undercover sauna paving and the two round water tanks is planted strictly with shallow, fibrous-rooted native grasses and wildflowers (<em>Lomandra</em>, <em>Poa</em>, <em>Chrysocephalum</em>)—no deep tree roots, no vehicle compaction, and no in-ground edible root crops.
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONTAINER OFFICE -->
+    <section class="section-card" id="office">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">Eastern Studio Spine</span>
+          <h2>2. Container Office &amp; 3m Roofed Veranda (View from Firepit)</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Drag slider to compare</span>
+      </div>
+
+      <div class="ba-wrapper">
+        <img src="images/office_after.jpg" alt="Proposed Roofed Container Office Veranda" />
+        <div class="ba-before-layer">
+          <img src="images/office_before.jpg" alt="Current Container Office Facade" />
+        </div>
+        <span class="ba-label before">Current View</span>
+        <span class="ba-label after">Completed 3m Roofed Veranda</span>
+        <div class="ba-handle"><div class="ba-knob">&#8596;</div></div>
+        <input type="range" min="0" max="100" value="25" class="ba-range" aria-label="Before and after comparison slider" />
+      </div>
+
+      <div class="side-by-side-grid">
+        <figure>
+          <img src="images/office_after.jpg" alt="Proposed Roofed Container Office Veranda" />
+          <figcaption>Proposed 3m Roofed Veranda &amp; Stepping-Stone Path</figcaption>
+        </figure>
+        <figure>
+          <img src="images/office_before.jpg" alt="Current Container Office Facade" />
+          <figcaption>Current Container Facade with Posts Installed</figcaption>
+        </figure>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <h4>Built Onto Your Existing Posts</h4>
+          <p>Spans a continuous insulated roof across the container and out to your four concreted timber posts, shading the large multi-pane windows so the old canvas awnings can be removed.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>Covered Shower/Toilet Pod Breezeway</h4>
+          <p>Extends the roofline across the right-hand side to give 100% weather-protected access to the self-contained white shower/toilet pod while screening the water tank and shed behind it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SAUNA -->
+    <section class="section-card" id="sauna">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">South-West Wellness Zone</span>
+          <h2>3. Undercover Paved Sauna Inside the Slat Screen (View from Water Tanks)</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Drag slider to compare</span>
+      </div>
+
+      <div class="ba-wrapper">
+        <img src="images/sauna_after.jpg" alt="Proposed Sauna Inside Vertical Slat Enclosure" />
+        <div class="ba-before-layer">
+          <img src="images/sauna_before.jpg" alt="Current Slat Screen View from Water Tanks" />
+        </div>
+        <span class="ba-label before">Current View</span>
+        <span class="ba-label after">Proposed Roofed Sauna Enclosure</span>
+        <div class="ba-handle"><div class="ba-knob">&#8596;</div></div>
+        <input type="range" min="0" max="100" value="25" class="ba-range" aria-label="Before and after comparison slider" />
+      </div>
+
+      <div class="side-by-side-grid">
+        <figure>
+          <img src="images/sauna_after.jpg" alt="Proposed Sauna Inside Vertical Slat Enclosure" />
+          <figcaption>Proposed Sauna Inside Slat Enclosure Under New Roof</figcaption>
+        </figure>
+        <figure>
+          <img src="images/sauna_before.jpg" alt="Current Slat Screen View from Water Tanks" />
+          <figcaption>Current View from Water Tanks</figcaption>
+        </figure>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <h4>Sauna Inside the Slat Enclosure</h4>
+          <p>Tucks the cedar and glass sauna directly inside the vertical timber slat privacy screen under a new dark steel-and-timber skillion roof attached to the southern house fascia.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>Paved Apron &amp; Plunge Pool Path</h4>
+          <p>Paves the outer walkway inside the timber sleeper edge with charcoal bluestone pavers, while stepping stones lead right (east) through the Septic Meadow straight to the Plunge Pool.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DECK NW VIEW -->
+    <section class="section-card" id="deck">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">Central Entertaining &amp; Pool</span>
+          <h2>4. View North-West from the 80cm-High Timber Deck</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Drag slider to compare</span>
+      </div>
+
+      <div class="ba-wrapper">
+        <img src="images/deck_after.jpg" alt="Proposed NW View from Deck with Pergola and Left Plunge Pool" />
+        <div class="ba-before-layer">
+          <img src="images/deck_before.jpg" alt="Current NW View from Timber Deck" />
+        </div>
+        <span class="ba-label before">Current View</span>
+        <span class="ba-label after">Proposed Pergola, Plunge Pool &amp; Orchard Gate</span>
+        <div class="ba-handle"><div class="ba-knob">&#8596;</div></div>
+        <input type="range" min="0" max="100" value="25" class="ba-range" aria-label="Before and after comparison slider" />
+      </div>
+
+      <div class="side-by-side-grid">
+        <figure>
+          <img src="images/deck_after.jpg" alt="Proposed NW View from Deck with Pergola and Left Plunge Pool" />
+          <figcaption>Proposed Pergola, Left-Side Plunge Pool &amp; Background Orchard Gate</figcaption>
+        </figure>
+        <figure>
+          <img src="images/deck_before.jpg" alt="Current NW View from Timber Deck" />
+          <figcaption>Current NW View from Timber Deck</figcaption>
+        </figure>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <h4>Ground-Floor Plunge Pool Beside 80cm Deck</h4>
+          <p>Because your existing square deck is raised 80cm off the ground, placing an 80–100cm-deep plunge pool on a ground slab immediately to the left (West) of the deck brings the top rim flush with the decking—no deep excavation required, and pool equipment tucks neatly under the 80cm deck cavity.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>Overhead Vine Pergola &amp; North Gate View</h4>
+          <p>An open-rafter hardwood pergola with deciduous grapevines shades the deck in summer while letting winter sun through. In the background right, the North Pedestrian Gate and Orchard Path wind down to the house.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: MAIN ENTRANCE DOUBLE DOORS -->
+    <section class="section-card" id="entrance">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">Arrival Sequence</span>
+          <h2>5. Main House Entrance — East-Facing Double Doors (View from Firepit)</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Drag slider to compare</span>
+      </div>
+
+      <div class="ba-wrapper">
+        <img src="images/doors_after.jpg" alt="Proposed Main Entrance Double Doors View" />
+        <div class="ba-before-layer">
+          <img src="images/doors_before.jpg" alt="Current View to House Verandah Double Doors" />
+        </div>
+        <span class="ba-label before">Current View</span>
+        <span class="ba-label after">Proposed Double-Door Main Entrance</span>
+        <div class="ba-handle"><div class="ba-knob">&#8596;</div></div>
+        <input type="range" min="0" max="100" value="25" class="ba-range" aria-label="Before and after comparison slider" />
+      </div>
+
+      <div class="side-by-side-grid">
+        <figure>
+          <img src="images/doors_after.jpg" alt="Proposed Main Entrance Double Doors View" />
+          <figcaption>Proposed Main Entrance Centered on Double Doors</figcaption>
+        </figure>
+        <figure>
+          <img src="images/doors_before.jpg" alt="Current View to House Verandah Double Doors" />
+          <figcaption>Current View from Firepit</figcaption>
+        </figure>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <h4>Centered on the Timber French Double Doors</h4>
+          <p>Wide bluestone stepping pavers in compacted gravel align directly with the central double doors (between the two middle verandah posts), flanked by warm wall sconces.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>Connected to the North Orchard Gate</h4>
+          <p>On the right side (past the blue bamboo pot), the bluestone stepping-stone path coming from the North Walk-In Pedestrian Gate &amp; Fruit Tree Orchard curves smoothly onto the paved verandah floor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SUNKEN FIREPIT -->
+    <section class="section-card" id="firepit">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">Courtyard Detail</span>
+          <h2>6. Sunken Brick Firepit &amp; Courtyard Border Upgrade</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Drag slider to compare</span>
+      </div>
+
+      <div class="ba-wrapper">
+        <img src="images/firepit_after.jpg" alt="Proposed Sunken Brick Firepit with Stone Coping" />
+        <div class="ba-before-layer">
+          <img src="images/firepit_before.jpg" alt="Current Sunken Brick Firepit" />
+        </div>
+        <span class="ba-label before">Current View</span>
+        <span class="ba-label after">Proposed Mortared Coping &amp; Border</span>
+        <div class="ba-handle"><div class="ba-knob">&#8596;</div></div>
+        <input type="range" min="0" max="100" value="25" class="ba-range" aria-label="Before and after comparison slider" />
+      </div>
+
+      <div class="side-by-side-grid">
+        <figure>
+          <img src="images/firepit_after.jpg" alt="Proposed Sunken Brick Firepit with Stone Coping" />
+          <figcaption>Proposed Mortared Coping Rim &amp; Native Border</figcaption>
+        </figure>
+        <figure>
+          <img src="images/firepit_before.jpg" alt="Current Sunken Brick Firepit" />
+          <figcaption>Current Sunken Brick Firepit</figcaption>
+        </figure>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <h4>Mortared Bullnose Coping Rim</h4>
+          <p>Mortaring continuous sandstone and bluestone coping slabs onto the top brick course (sitting ~50–75mm proud of the gravel) keeps pebbles out of the fire while preserving the sleek sunken pit.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>Outer Sleeper Border Planting</h4>
+          <p>A 600mm-wide border bed outside the timber sleeper edge planted with <em>Lomandra</em>, rosemary, lavender, and white daisies with 12V garden bollard lights.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PLANTING & MATERIALS SCHEDULE -->
+    <section class="section-card" id="schedule">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">Specifications</span>
+          <h2>7. Planting &amp; Material Quantities Schedule</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Tailored for frost winters &amp; hot dry summers</span>
+      </div>
+
+      <h3>A. Plant Schedule by Zone</h3>
+      <div style="overflow-x:auto;">
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th>Zone</th>
+              <th>Species / Variety</th>
+              <th>Pot Size</th>
+              <th>Spacing</th>
+              <th>Est. Qty</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>North &amp; East Road Hedge (Back Row)</strong></td>
+              <td><em>Adenanthos sericeus</em> (Woolly Bush), <em>Callistemon 'Slim'</em>, <em>Dodonaea viscosa 'Purpurea'</em></td>
+              <td>140–200mm</td>
+              <td>1.5–1.8m</td>
+              <td><strong>28–35</strong></td>
+              <td>Staggered between old stumps; 3–4m height (safe under powerlines).</td>
+            </tr>
+            <tr>
+              <td><strong>North Road Hedge (Front Row Dust Trap)</strong></td>
+              <td><em>Westringia fruticosa 'Grey Box'</em> &amp; <em>Correa alba</em></td>
+              <td>140mm</td>
+              <td>1.0–1.2m</td>
+              <td><strong>30–40</strong></td>
+              <td>Planted 1.2m in front of back row to seal lower gaps against road dust/noise.</td>
+            </tr>
+            <tr>
+              <td><strong>North Orchard Entrance Walk</strong></td>
+              <td>Dwarf Apple (&times;2), Pear, Apricot, Plum, Fig (<em>'Black Genoa'</em>)</td>
+              <td>Bare-root / 25L</td>
+              <td>3.0–3.5m</td>
+              <td><strong>6–8 trees</strong></td>
+              <td>Flanking the human-only pedestrian path from the North Gate.</td>
+            </tr>
+            <tr>
+              <td><strong>Main Entrance &amp; Firepit Borders</strong></td>
+              <td><em>Lavandula &times; intermedia</em>, <em>Rosmarinus officinalis</em>, <em>Lomandra 'Tanika'</em>, <em>Brachyscome</em></td>
+              <td>140mm</td>
+              <td>0.6–0.8m</td>
+              <td><strong>45–60</strong></td>
+              <td>Framing the double-door walkway, firepit sleeper border &amp; container deck.</td>
+            </tr>
+            <tr>
+              <td><strong>SW Septic Transpiration Meadow</strong></td>
+              <td><em>Lomandra 'Tanika'</em>, <em>Poa labillardierei</em>, <em>Chrysocephalum apiculatum</em></td>
+              <td>Tubestock / 140mm</td>
+              <td>0.6–0.8m</td>
+              <td><strong>60–80</strong></td>
+              <td>Shallow fibrous roots only—safe over septic absorption trenches.</td>
+            </tr>
+            <tr>
+              <td><strong>Deck Pergola Climbers</strong></td>
+              <td><em>Vitis vinifera</em> (Ornamental / Table Grapevine)</td>
+              <td>200mm</td>
+              <td>Corner posts</td>
+              <td><strong>2–4 vines</strong></td>
+              <td>Dense summer shade over the 80cm-high deck; lets full winter sun through.</td>
+            </tr>
+            <tr>
+              <td><strong>Shed &amp; Tank Screen (South-East)</strong></td>
+              <td><em>Callistemon 'Kings Park Special'</em> &amp; <em>Pittosporum 'Screen Between'</em></td>
+              <td>200mm</td>
+              <td>1.5m</td>
+              <td><strong>10–14</strong></td>
+              <td>Screens grey shed, chicken run &amp; water tank beside shower pod.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-top:2rem;">B. Hardscape &amp; Building Materials Allowance</h3>
+      <div style="overflow-x:auto;">
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th>Item / Zone</th>
+              <th>Specification</th>
+              <th>Est. Quantity / Allowance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Container Office 3m Veranda Roof &amp; Deck</strong></td>
+              <td>Insulated Colorbond roof panels + hardwood decking onto existing posts + covered link to shower/toilet pod</td>
+              <td>~36–42 m&sup2; roof &amp; deck area</td>
+            </tr>
+            <tr>
+              <td><strong>Sauna Skillion Roof &amp; Paved Apron</strong></td>
+              <td>Dark steel/timber skillion roof off south house fascia + 600&times;400&times;20mm charcoal Bluestone pavers around slat screen</td>
+              <td>~18–24 m&sup2; paving + roof</td>
+            </tr>
+            <tr>
+              <td><strong>Ground-Floor Plunge Pool Slab (West of Deck)</strong></td>
+              <td>150mm reinforced concrete slab at ground level beside western edge of 80cm-high deck (pool rim flush with deck floor)</td>
+              <td>~3.0m &times; 2.0m slab (or 2.2m round)</td>
+            </tr>
+            <tr>
+              <td><strong>Bluestone Stepping Pavers (All Paths)</strong></td>
+              <td>800&times;400&times;30mm sawn bluestone steppers (North Gate &rarr; Double Doors, Firepit &rarr; Office, Sauna &rarr; Pool)</td>
+              <td><strong>55–70 pavers</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Compacted Topping / Pebble Gravel</strong></td>
+              <td>14mm granitic sand/gravel topping &amp; river pebble top-up for walkways + NE Visitor Parking Pad</td>
+              <td><strong>8–12 m&sup3;</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Sunken Firepit Coping Rim</strong></td>
+              <td>500&times;300&times;40mm bullnose sandstone or bluestone coping pavers mortared to existing brick pit rim</td>
+              <td><strong>12–16 coping slabs</strong></td>
+            </tr>
+            <tr>
+              <td><strong>West Kitchen Garden Raised Beds</strong></td>
+              <td>4 &times; Corten steel or hardwood sleeper beds (2.4m &times; 1.2m &times; 0.45m high) + rabbit/dog fence &amp; gate</td>
+              <td><strong>4 beds</strong> (~5.5 m&sup3; veggie soil mix)</td>
+            </tr>
+            <tr>
+              <td><strong>Coarse Bush Mulch</strong></td>
+              <td>100mm deep across North hedge belt, orchard circles, and garden beds</td>
+              <td><strong>12–15 m&sup3;</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 8: STAGED ROADMAP -->
+    <section class="section-card" id="stages">
+      <div class="section-header">
+        <div>
+          <span class="step-tag">Action Plan</span>
+          <h2>8. Interactive 3-Stage Build Checklist</h2>
+        </div>
+        <span style="font-size:0.85rem;color:var(--muted);">Tick off items as you go (saved in your browser)</span>
+      </div>
+
+      <div class="stage-grid">
+        <div class="stage-box">
+          <h3>Stage 1: Container Veranda, Firepit Coping &amp; Road Hedge</h3>
+          <ul class="checklist">
+            <li><input type="checkbox" id="c1" /><label for="c1">Complete 3m Container Office veranda roof &amp; deck onto existing posts (extending over shower/toilet pod)</label></li>
+            <li><input type="checkbox" id="c2" /><label for="c2">Mortar bullnose coping slabs onto the sunken brick firepit rim &amp; plant outer sleeper border</label></li>
+            <li><input type="checkbox" id="c3" /><label for="c3">Plant staggered double-row Native Road Hedge between old stumps along North &amp; East fences</label></li>
+            <li><input type="checkbox" id="c4" /><label for="c4">Lay compacted gravel Visitor Parking Pad inside top-right (NE) gate</label></li>
+            <li><input type="checkbox" id="c5" /><label for="c5">Plant shallow-rooted SW Septic Meadow between house and water tanks</label></li>
+          </ul>
+        </div>
+
+        <div class="stage-box">
+          <h3>Stage 2: North Gate, Double-Door Entry &amp; Homestead</h3>
+          <ul class="checklist">
+            <li><input type="checkbox" id="c6" /><label for="c6">Install human-only North Walk-In Pedestrian Gate &amp; plant Fruit Tree Orchard</label></li>
+            <li><input type="checkbox" id="c7" /><label for="c7">Lay bluestone stepping-stone path from North Gate around to East-facing Main Entrance Double Doors</label></li>
+            <li><input type="checkbox" id="c8" /><label for="c8">Pave house East verandah floor &amp; re-center entry walk from firepit on the central double doors</label></li>
+            <li><input type="checkbox" id="c9" /><label for="c9">Build fenced West Kitchen Garden raised veggie beds &amp; SE shed-side Chicken Coop/Run</label></li>
+          </ul>
+        </div>
+
+        <div class="stage-box">
+          <h3>Stage 3: Undercover Sauna, 80cm Deck Pergola &amp; Plunge Pool</h3>
+          <ul class="checklist">
+            <li><input type="checkbox" id="c10" /><label for="c10">Build skillion roof over south privacy slat screen, pave surround in bluestone &amp; install Sauna inside slat enclosure</label></li>
+            <li><input type="checkbox" id="c11" /><label for="c11">Pour ground-level concrete pad immediately to the left (West) of the 80cm-high timber deck &amp; install Plunge Pool (rim flush with deck floor, pump under deck)</label></li>
+            <li><input type="checkbox" id="c12" /><label for="c12">Lay bluestone stepping stones linking the Sauna enclosure straight to the Plunge Pool</label></li>
+            <li><input type="checkbox" id="c13" /><label for="c13">Build open-rafter hardwood Pergola over the 80cm square deck &amp; add East-edge BBQ bar</label></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Property Garden &amp; Landscape Masterplan &bull; Interactive Before/After Design Package
+  </footer>
+
+  <script>
+    // Initialize all Before/After sliders
+    document.querySelectorAll('.ba-wrapper').forEach(wrapper => {
+      const range = wrapper.querySelector('.ba-range');
+      const beforeLayer = wrapper.querySelector('.ba-before-layer');
+      const handle = wrapper.querySelector('.ba-handle');
+      const updateSlider = (val) => {
+        const rightInset = 100 - Number(val);
+        beforeLayer.style.clipPath = `inset(0 ${rightInset}% 0 0)`;
+        handle.style.left = `${val}%`;
+      };
+      range.addEventListener('input', (e) => updateSlider(e.target.value));
+      updateSlider(range.value);
+    });
+
+    // View mode toggle (Interactive Slider vs Side-by-Side)
+    function toggleViewMode() {
+      const isSide = document.body.classList.toggle('show-side-by-side');
+      const btn = document.getElementById('viewModeBtn');
+      btn.textContent = isSide ? 'Switch to Interactive Slider View' : 'Switch to Side-by-Side View';
+    }
+
+    // Persist checklist checkboxes in localStorage
+    document.querySelectorAll('.checklist input[type="checkbox"]').forEach(box => {
+      const key = 'landscape_plan_' + box.id;
+      box.checked = localStorage.getItem(key) === 'true';
+      box.addEventListener('change', () => {
+        localStorage.setItem(key, box.checked);
+      });
+    });
+  </script>
+</body>
+</html>
