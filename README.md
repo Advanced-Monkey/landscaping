@@ -2,7 +2,7 @@
 
 ## 1. Final Aerial Masterplan (All Site Updates Applied)
 
-![Final Aerial Landscape Masterplan — NW Dog-Proof Extra Car Parking, Existing Weeping Cherry, White Outdoor Bathroom with Undercover Deck/Outdoor Bath/Laundry, Exact 80cm Square Deck + Left Plunge Pool, and Sauna Inside Slat Enclosure](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v7_1794444128302.jpg)
+![Final Aerial Landscape Masterplan — Continuous North-to-South Path, Exact Satellite White Bathroom Box Placement, NE Weeping Cherry, Car Removed, NW Dog-Proof Extra Car Parking, and Left Plunge Pool](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v9_final.jpg)
 
 ### Core Layout Highlights:
 1. **NW Extra Car Parking Bay with Dog-Proof Fence:** The top-left (North-West) corner to the left of the main driveway is formed into a gravel **Extra Car Parking Bay** off the driveway, enclosed on the garden side with a dog-proof fence and gate so dogs stay safely inside the yard when cars enter/exit.
