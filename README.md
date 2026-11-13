@@ -52,15 +52,16 @@
 
 ---
 
-## 5. Main House Entrance — Sunken Paved Verandah & Double Doors (1 Step Down from Rock Path & Lawn)
+## 5. Main House Entrance — Sunken Paved Verandah, Raised Lavender Planter Boxes & Double Doors (1 Step Down from Rock Path & Lawn)
 
-### Proposed View (Rock Path Framed by Left & Right Lawn, Stepping 1 Step Down into the Sunken Paved Verandah):
-![Proposed View from Firepit Showing Rock Path Framed by Left and Right Lawn Stepping 1 Step Down into Sunken Paved Verandah](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v3_1794444112028.jpg)
+### Proposed View (Rock Path Framed by Lawn, 1 Step Down into Sunken Paved Verandah & Raised Timber Lavender Planter Boxes):
+![Proposed View from Firepit Showing Rock Path Stepping 1 Step Down into Sunken Paved Verandah Flanked by Raised Timber Lavender Planter Boxes](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v4_1794603407795.jpg)
 
 ### Current Baseline View (Looking West from Firepit to House Verandah & Double Doors):
 ![Current View from Firepit to House Covered Verandah and Central Double Doors](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/.user_uploaded/media_1794358222967_912e64f2.jpg)
 
-* **1 Step Down into the Sunken Paved Verandah:** The rock path and lawn sit flush on the same upper level, with a clean bluestone coping edge along the verandah perimeter where you step **one step (1ft) down** from the rock path/lawn into the sunken paved verandah floor leading to the **central timber French double doors**—and where the **bluestone stepping stones from the North Orchard Gate** curve across the upper right lawn to meet the entrance step.
+* **1 Step Down into the Sunken Paved Verandah:** The rock path (framed by green lawn on both left and right) steps **one step (1ft) down** via a clean bluestone coping edge into the sunken paved verandah floor leading to the **central timber French double doors**.
+* **Raised Wooden Lavender Planter Boxes:** Built-in raised timber sleeper planter boxes filled with purple flowering lavender (*Lavandula × intermedia*) frame both the right-hand verandah edge (between the posts) and the left-hand lawn edge beside the bamboo pot, while the **bluestone stepping stones from the North Orchard Gate** curve smoothly across the right lawn to the step-down entrance.
 
 ---
 
