@@ -2,12 +2,12 @@
 
 ## 1. Final Aerial Masterplan (All Site Updates Applied)
 
-![Final Aerial Landscape Masterplan — Continuous North-to-South Path, Exact Satellite White Bathroom Box Placement, NE Weeping Cherry, Car Removed, NW Dog-Proof Extra Car Parking, and Left Plunge Pool](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v9_final.jpg)
+![Final Aerial Landscape Masterplan — Continuous North-to-South Path, Visitor Parking to Container Office & Firepit Connecting Gravel Path, White Bathroom Box & Undercover Bath/Laundry Deck, NE Weeping Cherry, NW Dog-Proof Extra Car Parking, and Left Plunge Pool](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v10_final.jpg)
 
 ### Core Layout Highlights:
 1. **NW Extra Car Parking Bay with Dog-Proof Fence:** The top-left (North-West) corner to the left of the main driveway is formed into a gravel **Extra Car Parking Bay** off the driveway, enclosed on the garden side with a dog-proof fence and gate so dogs stay safely inside the yard when cars enter/exit.
-2. **Existing Weeping Cherry Preserved & Full Path Link:** Keeps your **Weeping Cherry tree** inside the North-West gate, and extends the stepping-stone path from the North Orchard / Double Doors all the way across the northern carport to meet the NW driveway.
-3. **White Outdoor Bathroom + Undercover Deck, Outdoor Bath & Laundry:** Keeps the **white Outdoor Bathroom box** south-west of the container office clearly intact, with the roofed timber deck wrapping around it to house an **undercover Outdoor Bath & Laundry** right alongside it.
+2. **Existing Weeping Cherry Preserved & Full North-to-South Path Link:** Keeps your **Weeping Cherry tree** in the North-East lawn, and runs the stepping-stone path continuously from the North Pedestrian Gate through the orchard all the way down to the East verandah double doors (and branching west across the northern carport to meet the NW driveway).
+3. **White Outdoor Bathroom + Undercover Deck, Outdoor Bath, Laundry & Connecting Gravel Paths:** Keeps the **white Outdoor Bathroom box** in its exact satellite placement south-west of the container office with an **undercover Outdoor Bath & Laundry** on the timber deck alongside it—connected by a continuous **gravel & stepping-stone path running from the North-East Visitor Parking pad along the Shipping Container Office veranda right into the central Firepit Courtyard**.
 4. **Original-Footprint 80cm-High Timber Deck + Plunge Pool on Floor to Left (West):** Keeps your existing square hardwood deck footprint intact under a pergola, with the **Plunge Pool on a ground-level slab immediately to the left (West) of the 80cm-high decking**.
 5. **Sauna Inside the Vertical Timber Slat Enclosure (South of House):** Housed under a new dark skillion roof inside the vertical timber slat privacy screen.
 
