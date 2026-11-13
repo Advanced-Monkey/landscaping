@@ -2,12 +2,12 @@
 
 ## 1. Final Aerial Masterplan (All Site Updates Applied)
 
-![Final Aerial Landscape Masterplan — NW Dog-Proof Extra Car Parking, Existing Weeping Cherry, Undercover Outdoor Bath & Laundry, Exact 80cm Square Deck + Left Plunge Pool, and Sauna Inside Slat Enclosure](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v6_1794433480476.jpg)
+![Final Aerial Landscape Masterplan — NW Dog-Proof Extra Car Parking, Existing Weeping Cherry, White Outdoor Bathroom with Undercover Deck/Outdoor Bath/Laundry, Exact 80cm Square Deck + Left Plunge Pool, and Sauna Inside Slat Enclosure](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v7_1794444128302.jpg)
 
 ### Core Layout Highlights:
 1. **NW Extra Car Parking Bay with Dog-Proof Fence:** The top-left (North-West) corner to the left of the main driveway is formed into a gravel **Extra Car Parking Bay** off the driveway, enclosed on the garden side with a dog-proof fence and gate so dogs stay safely inside the yard when cars enter/exit.
 2. **Existing Weeping Cherry Preserved & Full Path Link:** Keeps your **Weeping Cherry tree** inside the North-West gate, and extends the stepping-stone path from the North Orchard / Double Doors all the way across the northern carport to meet the NW driveway.
-3. **Undercover Deck, Outdoor Bath & Laundry (External Bathroom):** The white structure south-west of the container office is your **External Bathroom**—the roofed timber deck extends around it to house an **undercover Outdoor Bath & Laundry**.
+3. **White Outdoor Bathroom + Undercover Deck, Outdoor Bath & Laundry:** Keeps the **white Outdoor Bathroom box** south-west of the container office clearly intact, with the roofed timber deck wrapping around it to house an **undercover Outdoor Bath & Laundry** right alongside it.
 4. **Original-Footprint 80cm-High Timber Deck + Plunge Pool on Floor to Left (West):** Keeps your existing square hardwood deck footprint intact under a pergola, with the **Plunge Pool on a ground-level slab immediately to the left (West) of the 80cm-high decking**.
 5. **Sauna Inside the Vertical Timber Slat Enclosure (South of House):** Housed under a new dark skillion roof inside the vertical timber slat privacy screen.
 
@@ -54,8 +54,8 @@
 
 ## 5. Main House Entrance — Sunken Paved Verandah & Double Doors (1 Step Down from Rock Path & Lawn)
 
-### Proposed View (Rock Path & Lawn Stepping 1 Step Down into the Sunken Paved Verandah):
-![Proposed View from Firepit Showing Rock Path and Lawn Stepping 1 Step Down into Sunken Paved Verandah](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v2_1794435477195.jpg)
+### Proposed View (Rock Path Framed by Left & Right Lawn, Stepping 1 Step Down into the Sunken Paved Verandah):
+![Proposed View from Firepit Showing Rock Path Framed by Left and Right Lawn Stepping 1 Step Down into Sunken Paved Verandah](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v3_1794444112028.jpg)
 
 ### Current Baseline View (Looking West from Firepit to House Verandah & Double Doors):
 ![Current View from Firepit to House Covered Verandah and Central Double Doors](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/.user_uploaded/media_1794358222967_912e64f2.jpg)
