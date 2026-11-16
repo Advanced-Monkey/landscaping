@@ -2,12 +2,12 @@
 
 ## 1. Final Aerial Masterplan (All Site Updates Applied)
 
-![Final Aerial Landscape Masterplan — Continuous North-to-South Path, Visitor Parking to Container Office & Firepit Connecting Gravel Path, White Bathroom Box & Undercover Bath/Laundry Deck, NE Weeping Cherry, NW Dog-Proof Extra Car Parking, and Left Plunge Pool](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v10_final.jpg)
+![Final Aerial Landscape Masterplan — Continuous North-to-South Path, NE Fenced Parking Bay, Visitor Parking to Container Office & Firepit Connecting Gravel Path, White Bathroom Box & Undercover Bath/Laundry Deck, NE Weeping Cherry, and Left Plunge Pool](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v12_final.jpg)
 
 ### Core Layout Highlights:
-1. **NW Extra Car Parking Bay with Dog-Proof Fence:** The top-left (North-West) corner to the left of the main driveway is formed into a gravel **Extra Car Parking Bay** off the driveway, enclosed on the garden side with a dog-proof fence and gate so dogs stay safely inside the yard when cars enter/exit.
+1. **North-East & North-West Fenced Extra Car Parking Bays:** Both the North-East pocket (directly south of the Visitor Parking cars and north of the shipping container office) and the North-West corner feature compacted gravel **Parking Bays enclosed with dog-proof fencing and gates** so extra cars can park while dogs stay safely fenced inside the garden.
 2. **Existing Weeping Cherry Preserved & Full North-to-South Path Link:** Keeps your **Weeping Cherry tree** in the North-East lawn, and runs the stepping-stone path continuously from the North Pedestrian Gate through the orchard all the way down to the East verandah double doors (and branching west across the northern carport to meet the NW driveway).
-3. **White Outdoor Bathroom + Undercover Deck, Outdoor Bath, Laundry & Connecting Gravel Paths:** Keeps the **white Outdoor Bathroom box** in its exact satellite placement south-west of the container office with an **undercover Outdoor Bath & Laundry** on the timber deck alongside it—connected by a continuous **gravel & stepping-stone path running from the North-East Visitor Parking pad along the Shipping Container Office veranda right into the central Firepit Courtyard**.
+3. **White Outdoor Bathroom + Undercover Deck, Outdoor Bath, Laundry & Connecting Gravel Paths:** Keeps the **white Outdoor Bathroom box** in its exact satellite placement south-west of the container office with an **undercover Outdoor Bath & Laundry** on the timber deck alongside it—connected by a continuous **gravel & stepping-stone path running from the North-East Visitor Parking & Fenced Parking Bay along the Shipping Container Office veranda right into the central Firepit Courtyard**.
 4. **Original-Footprint 80cm-High Timber Deck + Plunge Pool on Floor to Left (West):** Keeps your existing square hardwood deck footprint intact under a pergola, with the **Plunge Pool on a ground-level slab immediately to the left (West) of the 80cm-high decking**.
 5. **Sauna Inside the Vertical Timber Slat Enclosure (South of House):** Housed under a new dark skillion roof inside the vertical timber slat privacy screen.
 
@@ -18,8 +18,8 @@
 ### Proposed View from Firepit Courtyard:
 ![Completed 3m Roofed Veranda & Timber Deck on Container Office Viewed from Firepit](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/container_office_veranda_render_1794357910678.jpg)
 
-### Current Baseline View from Firepit Courtyard:
-![Current Shipping Container Facade with Veranda Posts Installed](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/.user_uploaded/media_1794357684105_3bc29095.png)
+### Current Baseline View from Firepit Courtyard (Aligned):
+![Current Shipping Container Facade with Veranda Posts Installed](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/office_before_outpainted_1794634494696.jpg)
 
 * **Continuous Insulated Skillion Roof:** Builds directly onto your **four existing timber posts**, extending across the right-hand side to roof the walkway to the **self-contained white shower/toilet pod**.
 * **Preserving the Feature Multi-Trunked Tree:** The 3m deck line sits behind the multi-trunked evergreen tree in the foreground, met by wide hardwood steps and bluestone stepping stones from the gravel firepit courtyard.
@@ -52,16 +52,16 @@
 
 ---
 
-## 5. Main House Entrance — Sunken Paved Verandah, Raised Lavender Planter Boxes & Double Doors (1 Step Down from Rock Path & Lawn)
+## 5. Main House Entrance — Sunken Paved Verandah, Raised Lavender Planter Boxes, Slat Privacy Wall & Sauna (View from Firepit)
 
-### Proposed View (Rock Path Framed by Lawn, 1 Step Down into Sunken Paved Verandah & Raised Timber Lavender Planter Boxes):
-![Proposed View from Firepit Showing Rock Path Stepping 1 Step Down into Sunken Paved Verandah Flanked by Raised Timber Lavender Planter Boxes](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v4_1794603407795.jpg)
+### Proposed View (1 Step Down into Sunken Paved Verandah, Raised Timber Lavender Planters, and Slat Privacy Wall + Sauna on Left):
+![Proposed View from Firepit Showing Sunken Paved Verandah, Raised Timber Lavender Planters, and Slat Privacy Wall with Sauna on Left](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v6_1794608354632.jpg)
 
-### Current Baseline View (Looking West from Firepit to House Verandah & Double Doors):
-![Current View from Firepit to House Covered Verandah and Central Double Doors](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/.user_uploaded/media_1794358222967_912e64f2.jpg)
+### Current Baseline View (Looking West from Firepit to House Verandah & Double Doors — Aligned):
+![Current View from Firepit to House Covered Verandah and Central Double Doors](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/doors_before_aligned.jpg)
 
 * **1 Step Down into the Sunken Paved Verandah:** The rock path (framed by green lawn on both left and right) steps **one step (1ft) down** via a clean bluestone coping edge into the sunken paved verandah floor leading to the **central timber French double doors**.
-* **Raised Wooden Lavender Planter Boxes:** Built-in raised timber sleeper planter boxes filled with purple flowering lavender (*Lavandula × intermedia*) frame both the right-hand verandah edge (between the posts) and the left-hand lawn edge beside the bamboo pot, while the **bluestone stepping stones from the North Orchard Gate** curve smoothly across the right lawn to the step-down entrance.
+* **Raised Wooden Lavender Planter Boxes & Southern Privacy Wall / Sauna:** Built-in raised timber sleeper planter boxes filled with purple flowering lavender (*Lavandula × intermedia*) frame both the right-hand verandah edge (between the posts) and the left-hand lawn edge beside the bamboo pot. Directly to the left of the verandah post (behind the left planter and bamboo) sits the **vertical timber slat privacy screen wall and the proposed undercover sauna** under its dark skillion roof.
 
 ---
 
