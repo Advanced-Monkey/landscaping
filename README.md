@@ -2,12 +2,12 @@
 
 ## 1. Final Aerial Masterplan (All Site Updates Applied)
 
-![Final Aerial Landscape Masterplan — Continuous North-to-South Path, NE Fenced Parking Bay, Visitor Parking to Container Office & Firepit Connecting Gravel Path, White Bathroom Box & Undercover Bath/Laundry Deck, NE Weeping Cherry, and Left Plunge Pool](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v12_final.jpg)
+![Final Aerial Landscape Masterplan — Continuous North-to-South Path, NE Parking Bay Open to Driveway with Garden Dog Fence, Crushed Rock Path with Bluestone Pavers, Visitor Parking to Container Office & Firepit Connecting Gravel Path, White Bathroom Box & Undercover Bath/Laundry Deck, NE Weeping Cherry, and Left Plunge Pool](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/masterplan_aerial_v13_final.jpg)
 
 ### Core Layout Highlights:
-1. **North-East & North-West Fenced Extra Car Parking Bays:** Both the North-East pocket (directly south of the Visitor Parking cars and north of the shipping container office) and the North-West corner feature compacted gravel **Parking Bays enclosed with dog-proof fencing and gates** so extra cars can park while dogs stay safely fenced inside the garden.
-2. **Existing Weeping Cherry Preserved & Full North-to-South Path Link:** Keeps your **Weeping Cherry tree** in the North-East lawn, and runs the stepping-stone path continuously from the North Pedestrian Gate through the orchard all the way down to the East verandah double doors (and branching west across the northern carport to meet the NW driveway).
-3. **White Outdoor Bathroom + Undercover Deck, Outdoor Bath, Laundry & Connecting Gravel Paths:** Keeps the **white Outdoor Bathroom box** in its exact satellite placement south-west of the container office with an **undercover Outdoor Bath & Laundry** on the timber deck alongside it—connected by a continuous **gravel & stepping-stone path running from the North-East Visitor Parking & Fenced Parking Bay along the Shipping Container Office veranda right into the central Firepit Courtyard**.
+1. **North-East & North-West Extra Car Parking Bays (Open to Driveway, Dog-Fenced on Garden Side):** In the North-East pocket (directly south of the Visitor Parking driveway and north of the shipping container office), the northern edge is completely open to the driveway so cars can drive straight in and park inside the property line, while a dog-proof fence & pedestrian gate wraps the western and southern garden edges.
+2. **Original Crushed Rock Path with Bluestone/Slate Stepping Pavers + Full North-to-South Orchard Walk:** Preserves your **original wide crushed rock path** between the East house verandah and the Firepit Courtyard with **bluestone/slate stepping pavers set directly on the crushed rock**, while the North-to-South stepping-stone path runs continuously from the North Pedestrian Gate through the orchard down to the entrance walk.
+3. **White Outdoor Bathroom + Undercover Deck, Outdoor Bath, Laundry & Connecting Gravel Paths:** Keeps the **white Outdoor Bathroom box** in its exact satellite placement south-west of the container office with an **undercover Outdoor Bath & Laundry** on the timber deck alongside it—connected by a continuous **gravel & stepping-stone path running from the North-East Visitor Parking & Parking Bay along the Shipping Container Office veranda right into the central Firepit Courtyard**.
 4. **Original-Footprint 80cm-High Timber Deck + Plunge Pool on Floor to Left (West):** Keeps your existing square hardwood deck footprint intact under a pergola, with the **Plunge Pool on a ground-level slab immediately to the left (West) of the 80cm-high decking**.
 5. **Sauna Inside the Vertical Timber Slat Enclosure (South of House):** Housed under a new dark skillion roof inside the vertical timber slat privacy screen.
 
@@ -52,16 +52,16 @@
 
 ---
 
-## 5. Main House Entrance — Sunken Paved Verandah, Raised Lavender Planter Boxes, Slat Privacy Wall & Sauna (View from Firepit)
+## 5. Main House Entrance — Sunken Paved Verandah, Raised Lavender Planter Boxes, Slat Privacy Wall & Compact Sauna (View from Firepit)
 
-### Proposed View (1 Step Down into Sunken Paved Verandah, Raised Timber Lavender Planters, and Slat Privacy Wall + Sauna on Left):
-![Proposed View from Firepit Showing Sunken Paved Verandah, Raised Timber Lavender Planters, and Slat Privacy Wall with Sauna on Left](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v6_1794608354632.jpg)
+### Proposed View (1 Step Down into Sunken Paved Verandah, Raised Timber Lavender Planters, and Compact Slat Privacy Wall + Sauna Hugging Left):
+![Proposed View from Firepit Showing Sunken Paved Verandah, Raised Timber Lavender Planters, and Compact Slat Privacy Wall with Sauna Hugging Left](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/firepit_to_house_sunken_verandah_v8_final.jpg)
 
 ### Current Baseline View (Looking West from Firepit to House Verandah & Double Doors — Aligned):
 ![Current View from Firepit to House Covered Verandah and Central Double Doors](C:/Users/peter/.gemini/antigravity/brain/6f59af65-c152-4b0f-8d3d-52babc575dbc/doors_before_aligned.jpg)
 
 * **1 Step Down into the Sunken Paved Verandah:** The rock path (framed by green lawn on both left and right) steps **one step (1ft) down** via a clean bluestone coping edge into the sunken paved verandah floor leading to the **central timber French double doors**.
-* **Raised Wooden Lavender Planter Boxes & Southern Privacy Wall / Sauna:** Built-in raised timber sleeper planter boxes filled with purple flowering lavender (*Lavandula × intermedia*) frame both the right-hand verandah edge (between the posts) and the left-hand lawn edge beside the bamboo pot. Directly to the left of the verandah post (behind the left planter and bamboo) sits the **vertical timber slat privacy screen wall and the proposed undercover sauna** under its dark skillion roof.
+* **Raised Wooden Lavender Planter Boxes & Compact Southern Privacy Wall / Sauna:** Built-in raised timber sleeper planter boxes filled with purple flowering lavender (*Lavandula × intermedia*) frame both the right-hand verandah edge (between the posts) and the left-hand lawn edge beside the bamboo pot. Hugging to the far left behind the bamboo and vertical timber slat privacy screen sits the compact undercover sauna (completely clear of the side of the house).
 
 ---
 
